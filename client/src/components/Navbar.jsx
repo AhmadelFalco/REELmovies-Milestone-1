@@ -1,14 +1,14 @@
 export default function Navbar() {
   return (
-    <div className="flex items-center justify-between border-b border-zinc-800 bg-zinc-900 px-8 py-4">
+    <nav className="flex flex-col items-center justify-between gap-3 border-b border-zinc-800 bg-zinc-900 px-4 py-4 sm:flex-row sm:px-8">
       <span className="text-xl font-bold text-amber-400">REELMovies</span>
 
-      <div className="flex gap-6 text-sm text-zinc-300">
+      <div className="flex gap-4 text-sm text-zinc-300 sm:gap-6">
         <a href="#" className="hover:text-amber-400">Discover</a>
         <a href="#" className="hover:text-amber-400">About</a>
         <a href="#" className="hover:text-amber-400">Login</a>
-        <a href="https://example.com/register" className="hover:text-amber-400">Register</a>
+        <a href="#" className="hover:text-amber-400">Register</a>
       </div>
-    </div>
+    </nav>
   );
 }
