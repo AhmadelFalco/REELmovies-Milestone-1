@@ -8,5 +8,4 @@ export const movies = [
   { id: 7, title: "Dune: Part Two", genre: "Sci-Fi", year: 2024, rating: 8.6, poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400" },
   { id: 8, title: "Mad Max: Fury Road", genre: "Action", year: 2015, rating: 8.1, poster: "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=400" },
   { id: 9, title: "Se7en", genre: "Thriller", year: 1995, rating: 8.6, poster: "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=400" },
-  { id: 10, title: "Gladiator", genre: "Action", year: 2000, rating: 8.5, poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400" }
-];ٍ
+  { id: 10, title: "Gladiator", genre: "Action", year: 2000, rating: 8.5, poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400" }];
