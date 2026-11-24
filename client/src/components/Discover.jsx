@@ -18,32 +18,33 @@ export default function Discover() {
 
   
   return (
-    <div>
-  
-<div className="p-6 max-w-md mx-auto">
-  <input
-    type="text"
-    placeholder="Search for a movie..."
-    className="w-full p-3 rounded-lg bg-zinc-800 text-white border border-zinc-700 focus:outline-none focus:border-amber-500"
-    value={searchTerm}
-    onChange={(e) => setSearchTerm(e.target.value)}
-  />
-</div>
-<select
-  className="w-full mt-4 p-3 rounded-lg bg-zinc-800 text-white border border-zinc-700 focus:outline-none focus:border-amber-500"
-  value={sortBy}
-  onChange={(e) => setSortBy(e.target.value)}
->
-  <option value="">Sort By...</option>
-  <option value="year">Year (Newest)</option>
-  <option value="rating">Rating (Highest)</option>
-</select>
+    <div id="discover">
 
-    <div className="grid grid-cols-2  gap-6 p-6 sm:grid-cols-6">
-{displayedMovies.map((movie) => (
-  <MovieCard key={movie.id} movie={movie} />
-))}
-    </div>
+      <div className="flex flex-col sm:flex-row gap-8 p-6 max-w-4xl mx-auto items-center justify-center mb-16">
+        <input
+          type="text"
+          placeholder="Search for a movie..."
+          className="w-full sm:w-80 p-3 rounded-lg bg-zinc-800 text-white border border-zinc-700 focus:outline-none focus:border-amber-500"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+
+        <select
+          className="w-full sm:w-80 p-3 rounded-lg bg-zinc-800 text-white border border-zinc-700 focus:outline-none focus:border-amber-500"
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value)}
+        >
+          <option value="">Sort By...</option>
+          <option value="year">Year (Newest)</option>
+          <option value="rating">Rating (Highest)</option>
+        </select>
+      </div>
+
+      <div className="grid grid-cols-2 gap-8 px-6 sm:px-12 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full max-w-[1400px] mx-auto">
+        {displayedMovies.map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
+      </div>
     
     </div>
   );
