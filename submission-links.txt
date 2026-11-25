@@ -1,0 +1,13 @@
+Project Title: REELMovies - Milestone 1
+
+Student 1: AHMAD EMAD HUSSEIN ABDALLAH
+Student ID 1: 2433053
+
+Student 2: MOHAMMAD ABDALLAH FAKHRI SAMHAN
+Student ID 2: 2433192
+
+Public GitHub Repository URL: https://github.com/AhmadelFalco/REELmovies-Milestone-1
+
+Repository Commit Hash: 0313b8552be68619783bd5605e237e619b61da14
+
+Deployed Front-end URL: https://reelmovies-milestone-1.onrender.com/
